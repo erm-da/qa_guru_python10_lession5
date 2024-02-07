@@ -23,12 +23,12 @@ def test_demoqa():
     browser.element('#submit').click()
 
     #Assert
-    browser.element('.table-responsive').should(have.texts(
+    browser.element('.table-responsive').all('td').even.should(have.texts(
         "Denis Ermakov",
-        "dermakov @ example.com",
+        "dermakov@test.com",
         "Male",
         "7911001020",
-        "05 December,2024",
+        "05 December,1992",
         "Computer Science",
         "Sports, Reading, Music",
         "stock_img.jpg",
